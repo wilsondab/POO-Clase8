@@ -25,7 +25,8 @@ namespace EjercicioClase1Modulo3.Controllers
         [GET] v1/libros
         */
 
-        [HttpGet( "" )]
+        [HttpGet]
+        [Route( "" )]
         public ActionResult<List<Book>> GetBooks()
         {
             return Ok();
